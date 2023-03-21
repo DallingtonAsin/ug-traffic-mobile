@@ -95,7 +95,7 @@ class _ShoppingListState extends State<ShoppingList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Shopping List'),
+        title: const Text('Shop'),
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
@@ -109,17 +109,4 @@ class _ShoppingListState extends State<ShoppingList> {
       ),
     );
   }
-}
-
-void main() {
-  runApp(const MaterialApp(
-    title: 'Shopping App',
-    home: ShoppingList(
-      products: [
-        Product(name: 'Eggs'),
-        Product(name: 'Flour'),
-        Product(name: 'Chocolate chips'),
-      ],
-    ),
-  ));
 }
