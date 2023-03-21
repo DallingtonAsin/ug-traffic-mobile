@@ -1,8 +1,8 @@
-# ug_traffic_mobile
+# UG TRAFFIC
 
 A traffic recognizing app.
 
-## Getting Started
+## INTRODUCTION
 
 This mobile app is developed in flutter.
 
