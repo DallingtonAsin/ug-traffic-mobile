@@ -1,4 +1,5 @@
-import 'package:ug_traffic/common/custom_button.dart';
+import 'package:ug_traffic/common/buttons/custom_button.dart';
+import 'package:ug_traffic/common/buttons/rounded_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:ug_traffic/product.dart';
 
@@ -76,7 +77,6 @@ class _HomeScreenState extends State<HomeScreen> {
               style: Theme.of(context).textTheme.headline4,
             ),
             const SizedBox(width: 16),
-            Text('Counter: $_counter'),
             CustomButton(
                 text: 'Submit',
                 onPressed: () => Navigator.push(
@@ -90,12 +90,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: RoundedIconButton(
+          onPressed: _incrementCounter,
+          tooltip: 'Add',
+          child: const Icon(Icons.add)),
     );
   }
 }
